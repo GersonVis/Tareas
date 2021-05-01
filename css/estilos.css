@@ -1,0 +1,97 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+header{
+    width: 100%;
+    height: 100px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    background-color: brown;
+    background-image: url(/images/fotografo-paisajes.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative;
+}
+.main{
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    background-color: rgb(240, 230, 230);
+    padding-top: 10px;
+}
+.tareaInput{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px auto 0px auto;
+}
+#inputTarea{
+    width: 85%;
+    margin-right: 10px;
+    height: 35px;
+}
+.lista{
+    width: 95%;
+
+    margin-top: 10px;
+}
+li{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px white solid;
+    transition: background-color 2s, transform 1s;
+    animation-name: entrada;
+    animation-duration: 1s;
+}
+@keyframes entrada{
+    from {
+        margin-left: 100%;
+        width: 300%
+      }
+    
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+}
+li:hover{
+    background-color: rgb(136, 223, 226);
+    transform: translateX(2%);
+}
+.work{
+    width: 80%;
+}
+.done.remover{
+    width: 5%;
+    height: 90%;
+}
+#inputTarea{
+    width: 85%;
+    margin-right: 10px;
+}
+#btnAdd{
+    width: 10%;
+    height: 100%;
+    margin-left: 10px;
+}
+#fecha{
+    color: white;
+    font-size: 1.2em;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
